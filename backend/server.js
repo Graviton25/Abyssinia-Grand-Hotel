@@ -1,5 +1,5 @@
 const express=require('express');const cors=require('cors');const bcrypt=require('bcryptjs');const jwt=require('jsonwebtoken');const fs=require('fs');const path=require('path');
-const app=express(),PORT=process.env.PORT||3000,SECRET=process.env.JWT_SECRET||'change-this-in-production';
+const app=express(),PORT=process.env.PORT||3000,SECRET=process.env.JWT_SECRET||'dev-only-secret-change-me';
 const DB=path.join(__dirname,'..','data','db.json'),FRONT=path.join(__dirname,'..','frontend');
 const rooms=[
 {id:1,name:'Royal Presidential Suite',type:'Presidential',price:18500,capacity:4,description:'An exceptional private retreat with generous living space, refined interiors and an elevated stay experience.',image:'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85'},
