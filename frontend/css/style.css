@@ -1,0 +1,298 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f6f2;color:#181818;font-family:"DM Sans",sans-serif}button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.header{height:78px;position:fixed;z-index:20;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:#ffffffe8;backdrop-filter:blur(18px);border-bottom:1px solid #0000000d}.brand{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",serif}.brand b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#171717;color:#fff;font:700 10px "DM Sans"}.brand span{font-size:17px}.brand small{display:block;font:700 8px "DM Sans";letter-spacing:.2em;opacity:.5}.header nav{display:flex;gap:28px;font-size:12px;font-weight:700}.header nav a{opacity:.65}.btn{border:0;border-radius:8px;padding:11px 16px;font-size:12px;font-weight:700;cursor:pointer}.btn.dark{background:#171717;color:#fff}.btn.ghost{background:transparent}.btn.light{background:#fff;color:#111;display:inline-block}.btn.outline{background:transparent;border:1px solid #0002}.hero{height:88vh;min-height:620px;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#000b,#0003),url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=88") center/cover}.hero-copy{position:relative;margin:80px 8vw 0;max-width:680px}.hero-copy>small,.intro small,.section-head small,.contact small{font-size:10px;letter-spacing:.2em;font-weight:700;opacity:.7}.hero h1{font:600 clamp(50px,7vw,88px)/.98 "Playfair Display",serif;letter-spacing:-.04em;margin:14px 0 22px}.hero h1 i{font-weight:500}.hero p{max-width:530px;line-height:1.8;opacity:.88;margin-bottom:30px}.intro,.contact{max-width:1120px;margin:auto;padding:105px 24px;display:grid;grid-template-columns:1fr 1fr;gap:80px}.intro h2,.contact h2{font:600 clamp(35px,4vw,52px)/1.08 "Playfair Display",serif;margin:10px 0}.intro>p,.contact>div>p{align-self:end;line-height:1.9;opacity:.62}.rooms{max-width:1240px;margin:auto;padding:95px 24px 115px}.section-head{text-align:center;max-width:740px;margin:auto}.section-head h2{font:600 clamp(36px,4vw,52px)/1.08 "Playfair Display",serif;margin:10px 0}.section-head p{line-height:1.8;opacity:.62}.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:42px 0}.filters button{padding:10px 17px;border:1px solid #0001;background:#fff;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}.filters button.active{background:#171717;color:#fff}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.room-card{display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid #0000000d;border-radius:20px;box-shadow:0 8px 30px #0000000d;transition:.28s}.room-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px #0000001a}.room-image{height:225px;position:relative;overflow:hidden;background:#ddd}.room-image img{width:100%;height:100%;object-fit:cover;display:block;transition:.55s}.room-card:hover img{transform:scale(1.045)}.room-type{position:absolute;top:14px;left:14px;background:#111b;color:#fff;padding:7px 11px;border-radius:999px;font-size:10px;font-weight:700;backdrop-filter:blur(8px)}.room-content{display:flex;flex:1;flex-direction:column;padding:22px}.room-heading{display:flex;justify-content:space-between;gap:12px}.room-heading h3{margin:0;font:600 20px/1.25 "Playfair Display",serif}.room-capacity{font-size:10px;background:#f2f1ee;padding:5px 8px;border-radius:6px;white-space:nowrap;height:max-content}.room-description{margin:12px 0 22px;min-height:69px;color:#606060;font-size:13px;line-height:1.75;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.room-bottom{margin-top:auto;padding-top:17px;border-top:1px solid #0000000e;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}.room-price strong{display:block;font-size:17px}.room-price span{font-size:10px;opacity:.5}.book-room{background:#171717;color:#fff;border:0;border-radius:8px;padding:11px 15px;font-size:11px;font-weight:700;cursor:pointer}.amenities{background:#171717;color:#fff;padding:75px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:50px}.amenities small{opacity:.4}.amenities h3{font:500 25px "Playfair Display",serif}.amenities p{font-size:13px;line-height:1.7;opacity:.55}.contact form{display:flex;flex-direction:column;gap:14px}.contact label,.modal-card label{font-size:11px;font-weight:700}.contact input,.contact textarea,.modal-card input{display:block;width:100%;margin-top:7px;padding:12px;border:1px solid #0002;border-radius:8px;background:#fff;outline:none}.contact textarea{resize:vertical}footer{padding:35px 8vw;border-top:1px solid #0001;display:flex;justify-content:space-between;font-size:11px}footer p{opacity:.5}.modal{display:none;position:fixed;z-index:50;inset:0;background:#0009;backdrop-filter:blur(7px);place-items:center;padding:20px}.modal.open{display:grid}.modal-card{position:relative;width:min(470px,100%);max-height:90vh;overflow:auto;background:#f7f6f2;border-radius:20px;padding:30px}.modal-card h2{font:600 32px "Playfair Display",serif;margin:8px 0 20px}.close{position:absolute;right:18px;top:13px;background:none;border:0;font-size:27px;cursor:pointer}.modal-card form{display:flex;flex-direction:column;gap:14px}.full{width:100%}.modal-card p{font-size:12px;opacity:.6}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.dash-top{display:flex;justify-content:space-between;align-items:center}.booking-item{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #0001;padding:17px 0}.booking-item h3{margin:0 0 5px;font:500 19px "Playfair Display",serif}.booking-item p,.booking-item small{font-size:11px;opacity:.6}.toast{position:fixed;z-index:100;bottom:24px;left:50%;transform:translate(-50%,20px);padding:13px 18px;border-radius:9px;background:#171717;color:#fff;font-size:12px;opacity:0;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.loading,.empty{text-align:center;grid-column:1/-1;padding:60px;border:1px dashed #0002;border-radius:16px}.spinner{width:24px;height:24px;border:3px solid #ddd;border-top-color:#111;border-radius:50%;animation:spin .8s linear infinite;margin:auto}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:1000px){.header nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:680px){.header{padding:0 16px}.header>div .ghost{display:none}.hero-copy{margin:90px 24px 0}.hero h1{font-size:52px}.intro,.contact{grid-template-columns:1fr;padding:75px 20px;gap:40px}.rooms{padding:75px 17px}.grid{grid-template-columns:1fr}.filters{justify-content:flex-start;flex-wrap:nowrap;overflow:auto;padding-bottom:6px}.filters button{flex:0 0 auto}.room-image{height:215px}.amenities{grid-template-columns:1fr;padding:65px 25px;gap:25px}footer{padding:30px 20px;flex-direction:column;gap:15px}.two{grid-template-columns:1fr}}
+
+/* =========================================
+   DINING & HOTEL SERVICES
+   ========================================= */
+
+.services-section {
+  padding: 110px 5%;
+  background: #f8f6f1;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #a98245;
+}
+
+.section-heading h2 {
+  margin: 0 0 16px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #6e6a62;
+  line-height: 1.8;
+}
+
+.services-grid {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  min-height: 285px;
+  padding: 30px 26px;
+  background: #fff;
+  border: 1px solid rgba(40, 34, 25, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(40, 34, 25, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(40, 34, 25, 0.11);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: #f4eee3;
+  font-size: 1.55rem;
+}
+
+.service-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #a98245;
+}
+
+.service-card h3 {
+  margin: 9px 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+}
+
+.service-card p {
+  min-height: 72px;
+  margin: 0 0 20px;
+  color: #716d65;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.service-action {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #29251f;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.service-action::after {
+  content: " →";
+  transition: margin-left 0.2s ease;
+}
+
+.service-action:hover::after {
+  margin-left: 5px;
+}
+
+@media (max-width: 1050px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+}
+
+
+/* =========================================
+   DINING MENU MODAL
+   ========================================= */
+
+.service-modal-card {
+  width: min(760px, 94vw);
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.service-modal-subtitle {
+  color: #777168;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.service-menu {
+  display: grid;
+  gap: 12px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px;
+  border: 1px solid rgba(40, 34, 25, 0.08);
+  border-radius: 14px;
+  background: #faf9f6;
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-info h4 {
+  margin: 0 0 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+}
+
+.menu-item-info p {
+  margin: 0;
+  color: #777168;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.menu-item-price {
+  display: block;
+  margin-top: 7px;
+  color: #a98245;
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+
+.menu-add {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(40, 34, 25, 0.15);
+  border-radius: 50%;
+  background: #fff;
+  color: #29251f;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.menu-add:hover {
+  background: #29251f;
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.menu-add.added {
+  background: #a98245;
+  color: #fff;
+}
+
+.service-order-bar {
+  position: sticky;
+  bottom: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 24px;
+  padding: 18px 0 2px;
+  background: #fff;
+  border-top: 1px solid rgba(40, 34, 25, 0.08);
+}
+
+.service-order-bar small {
+  display: block;
+  color: #8a8378;
+  letter-spacing: .12em;
+  font-size: .65rem;
+}
+
+.service-order-bar strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .menu-item {
+    align-items: flex-start;
+  }
+
+  .service-order-bar {
+    align-items: flex-end;
+  }
+}
+
+
+/* My Stay sections */
+.stay-section {
+  margin-top: 24px;
+}
+
+.stay-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.stay-section-heading small {
+  display: block;
+  letter-spacing: .14em;
+  font-size: .68rem;
+  opacity: .6;
+  margin-bottom: 4px;
+}
+
+.stay-section-heading h3 {
+  margin: 0;
+}
+
+.stay-section-heading > span {
+  min-width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,.06);
+  font-size: .82rem;
+}
+
+.service-request-item {
+  border-left: 3px solid currentColor;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 6px;
+  text-transform: capitalize;
+  opacity: .7;
+}

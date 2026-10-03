@@ -1,0 +1,166 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Abyssinia Grand Hotel — refined hospitality and effortless reservations."><title>Abyssinia Grand Hotel</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="header"><a class="brand" href="#home"><b>AGH</b><span>Abyssinia<small>GRAND HOTEL</small></span></a><nav><a href="#home">Home</a><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav><div><button class="btn ghost" id="loginBtn">Sign in</button><button class="btn dark" id="signupBtn">Create account</button><button class="btn ghost" id="dashboardBtn" hidden>My stay</button><button class="btn dark" id="adminBtn" hidden>Admin</button></div></header>
+<main><section class="hero" id="home"><div class="hero-bg"></div><div class="hero-copy"><small> A QUIET STANDARD OF LUXURY </small><h1>Stay beautifully.<br><i>Experience Ethiopia.</i></h1><p>Thoughtful rooms, warm Ethiopian hospitality and a seamless stay designed around you.</p><a class="btn light" href="#rooms">Explore rooms</a></div></section>
+<section class="intro" id="experience"><div><small>ABYSSINIA GRAND HOTEL</small><h2>Modern elegance with a distinctly Ethiopian welcome.</h2></div><p>From a restful night to a longer city stay, every detail is designed to make your time with us comfortable, calm and memorable.</p></section>
+<section class="rooms" id="rooms"><div class="section-head"><small>YOUR STAY</small><h2>Rooms & suites</h2><p>Choose a space that matches your journey — from refined essentials to expansive suites designed for a more exceptional stay.</p></div><div class="filters" id="filters"><button class="active" data-filter="all">All rooms</button><button data-filter="Presidential">Presidential</button><button data-filter="Suite">Suites</button><button data-filter="Deluxe">Deluxe</button><button data-filter="Twin">Twin</button><button data-filter="Standard">Standard</button><button data-filter="Family">Family</button></div><div id="roomGrid" class="grid"></div></section>
+<section class="amenities"><div><small>01</small><h3>Warm hospitality</h3><p>Attentive service shaped by Ethiopian warmth and genuine care.</p></div><div><small>02</small><h3>Comfort first</h3><p>Thoughtful spaces, restful beds and practical modern amenities.</p></div><div><small>03</small><h3>Effortless stays</h3><p>Simple reservations and a guest experience designed around convenience.</p></div></section>
+<section class="services-section" id="services">
+  <div class="section-heading">
+    <span class="eyebrow">BEYOND YOUR STAY</span>
+    <h2>Dining & Hotel Services</h2>
+    <p>From authentic Ethiopian cuisine to thoughtful in-room services, every detail is designed to make your stay exceptional.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <article class="service-card">
+      <div class="service-icon">🍽️</div>
+      <span class="service-tag">DINING</span>
+      <h3>Grand Restaurant</h3>
+      <p>Enjoy Ethiopian favorites and international dishes prepared with fresh ingredients.</p>
+      <button class="service-action" data-service="Grand Restaurant">Explore Menu</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">☕</div>
+      <span class="service-tag">CAFÉ</span>
+      <h3>Abyssinia Café</h3>
+      <p>Fresh Ethiopian coffee, tea, pastries and light meals in a relaxed atmosphere.</p>
+      <button class="service-action" data-service="Abyssinia Café">View Café</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🥂</div>
+      <span class="service-tag">LOUNGE</span>
+      <h3>Royal Lounge</h3>
+      <p>Unwind with refreshing mocktails, juices, soft drinks and carefully crafted beverages.</p>
+      <button class="service-action" data-service="Royal Lounge">Discover Lounge</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🛎️</div>
+      <span class="service-tag">24/7</span>
+      <h3>Room Service</h3>
+      <p>Order food and beverages directly to your room whenever you need them.</p>
+      <button class="service-action" data-service="Room Service">Request Service</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🥐</div>
+      <span class="service-tag">MORNING</span>
+      <h3>Breakfast</h3>
+      <p>Start your morning with Ethiopian and continental breakfast options.</p>
+      <button class="service-action" data-service="Breakfast">See Breakfast</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🎉</div>
+      <span class="service-tag">EVENTS</span>
+      <h3>Private Dining & Events</h3>
+      <p>Celebrate special moments with customized dining, meetings and private events.</p>
+      <button class="service-action" data-service="Private Dining & Events">Plan an Event</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🧺</div>
+      <span class="service-tag">CARE</span>
+      <h3>Laundry & Dry Cleaning</h3>
+      <p>Professional garment care to keep you comfortable throughout your stay.</p>
+      <button class="service-action" data-service="Laundry & Dry Cleaning">Request Service</button>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">🚗</div>
+      <span class="service-tag">TRANSFER</span>
+      <h3>Airport Transfer</h3>
+      <p>Arrange convenient transportation between the hotel and Addis Ababa Bole International Airport.</p>
+      <button class="service-action" data-service="Airport Transfer">Arrange Transfer</button>
+    </article>
+
+  </div>
+</section>
+<section class="contact" id="contact"><div><small>GET IN TOUCH</small><h2>Planning your next stay?</h2><p>Questions about rooms, reservations or your visit? Send us a message and our team will get back to you.</p></div><form id="contactForm"><label>Name<input id="contactName" required></label><label>Email<input id="contactEmail" type="email" required></label><label>Message<textarea id="contactMessage" rows="5" required></textarea></label><button class="btn dark" type="submit">Send message</button></form></section></main>
+<footer><div><b>Abyssinia Grand Hotel</b><p>Refined hospitality in Addis Ababa.</p></div><span>© <i id="year"></i> Abyssinia Grand Hotel</span></footer>
+<div class="toast" id="toast"></div><div class="modal" id="authModal"><div class="modal-card"><button class="close" data-close="authModal">×</button><small>GUEST ACCESS</small><h2 id="authTitle">Welcome back</h2><form id="authForm"><label id="nameWrap" hidden>Full name<input id="authName"></label><label>Email<input id="authEmail" type="email" required></label><label>Password<input id="authPassword" type="password" minlength="6" required></label><button class="btn dark full" id="authSubmit">Sign in</button></form><p id="authSwitch"></p></div></div>
+<div class="modal" id="bookingModal"><div class="modal-card"><button class="close" data-close="bookingModal">×</button><small>RESERVE YOUR ROOM</small><h2 id="bookingRoomName"></h2><p id="bookingRoomPrice"></p><form id="bookingForm"><div class="two"><label>Check in<input id="checkIn" type="date" required></label><label>Check out<input id="checkOut" type="date" required></label></div><label>Guests<input id="guestCount" type="number" min="1" value="1" required></label><button class="btn dark full">Confirm reservation</button></form></div></div>
+</div>
+<div class="modal" id="adminModal">
+  <div class="modal-card admin-modal-card">
+    <button class="close" data-close="adminModal" type="button">×</button>
+
+    <div class="admin-header">
+      <div>
+        <small>ABYSSINIA GRAND HOTEL</small>
+        <h2>Administration</h2>
+      </div>
+      <span class="admin-badge">ADMIN</span>
+    </div>
+
+    <div class="admin-stats" id="adminStats">
+      <div class="admin-stat">
+        <small>ROOMS</small>
+        <strong>—</strong>
+      </div>
+      <div class="admin-stat">
+        <small>GUESTS</small>
+        <strong>—</strong>
+      </div>
+      <div class="admin-stat">
+        <small>BOOKINGS</small>
+        <strong>—</strong>
+      </div>
+      <div class="admin-stat">
+        <small>REVENUE</small>
+        <strong>—</strong>
+      </div>
+    </div>
+
+    <div class="admin-tabs">
+      <button class="active" data-admin-tab="bookings" type="button">Bookings</button>
+      <button data-admin-tab="services" type="button">Services</button>
+      <button data-admin-tab="messages" type="button">Messages</button>
+    </div>
+
+    <div id="adminContent">
+      <p>Loading administration data...</p>
+    </div>
+  </div>
+</div>
+<div class="modal" id="serviceModal">
+  <div class="modal-card service-modal-card">
+    <button class="close" data-close="serviceModal" type="button">×</button>
+    <small>ABYSSINIA GRAND HOTEL</small>
+    <h2 id="serviceModalTitle">Dining & Services</h2>
+    <p id="serviceModalSubtitle" class="service-modal-subtitle"></p>
+
+    <div id="serviceMenu" class="service-menu"></div>
+
+    <div class="service-order-bar">
+      <div>
+        <small>YOUR ORDER</small>
+        <strong id="serviceOrderTotal">0 ETB</strong>
+      </div>
+      <button class="btn dark" id="serviceOrderBtn" type="button">
+        Request Service
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="dashboardModal">
+  <div class="modal-card dashboard">
+    <button class="close" data-close="dashboardModal">×</button>
+    <div class="dash-top">
+      <div>
+        <small>MY STAY</small>
+        <h2 id="dashName">Guest</h2>
+      </div>
+      <button class="btn outline" id="logoutBtn">Sign out</button>
+    </div>
+    <div id="bookingList"></div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
